@@ -12,6 +12,7 @@
         <title>Inbox from Google</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="resources/css/main.css" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     </head>
 
     <body>
@@ -19,18 +20,18 @@
             <header >
                 <div class="header">
                     <img id="logo" src="resources/img/logo.svg" alt="Logo.svg">
-                    <a href="#">Sign in</a>
-                    <button>GET INBOX</button>
+                    <a href="#">SIGN IN</a>
+                    <button class="button">GET INBOX</button>
                 </div>
 
                 <nav>
                     <ul class="navList">
-                        <li><a href="#">inbox</a></li>
-                        <li><a href="#">bundles</a></li>
-                        <li><a href="#">highlite</a></li>
-                        <li><a href="#">Remainders</a></li>
-                        <li><a href="#">Snoozers</a></li>
-                        <li><a href="#">Getinbox</a></li>
+                        <li><a href="#">Inbox</a></li>
+                        <li><a href="#">Bundles</a></li>
+                        <li><a href="#">Highlights</a></li>
+                        <li><a href="#">Reminders</a></li>
+                        <li><a href="#">Snooze</a></li>
+                        <li><a href="#">Get Inbox</a></li>
                     </ul>
                 </nav>
 
@@ -40,7 +41,7 @@
 
                 <img src="resources/img/inboxLogo.svg" alt="logo.svg">
                 <h1>The Inbox thats works for you</h1>
-                <button>GET INBOX</button>
+                <button class="button">GET INBOX</button>
 
             </section>
 
@@ -50,7 +51,7 @@
                     <h3>
                         <strong>Nulla Vitae elit libero </strong>
                     </h3>
-                    <p>
+                    <p class="justi">
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do 
                             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim 
                             ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut 
@@ -58,7 +59,7 @@
                             reprehenderit in voluptate velit esse cillum dolore eu fugiat 
                             nulla pariatur.
                     </p>
-                    <a href="#">MORE</a>
+                    <a class="green_a" href="#">MORE</a>
                 </div>
                 <img src="resources/img/manImg.jpg" alt="manImg.jpg">
 
@@ -67,35 +68,42 @@
 
             <section class ="products">
 
-                <div class="product">
-                    <img src="resources/img/glass.jpg" alt="glass.jpg">
-                    <h3>
+                <div class="product" >
+                    <img style="padding-bottom: 16%;" src="resources/img/glass.jpg" alt="glass.jpg">
+                    <h3 >
                         <strong>Tellus Sit </strong>
                     </h3>
-                    <button>ADD TO CART</button>
+                    <hr class="border_tiny">
+                    <h4 class="price">$250</h4>
+                    <button class="button_cart">ADD TO CART</button>
                 </div>
 
                 <div class="product">
                     <img src="resources/img/shoes.jpg" alt="shoes.jpg">
-                    <h3>
+                    <h3 >
                         <strong>Elit Pharetra Justo </strong>
                     </h3>
-                    <button>ADD TO CART</button>
+                    <hr class="border_tiny">
+                    <h4 class="price">$250</h4>
+                    <button class="button_cart">ADD TO CART</button>
                 </div>
 
                 <div class="product">
                     <img src="resources/img/bag.jpg" alt="bag.jpg">
-                    <h3>
-                        <strong>Purus Ultricies </strong>
+                    <h3 >
+                        <strong><span >Purus Ultricies<span></span> </strong>
                     </h3>
-                    <button>ADD TO CART</button>
+                    <hr class="border_tiny">
+                    <h4 class="price">$250</h4>
+                    <button class="button_cart">ADD TO CART</button>
                 </div>   
 
             </section>
 
             <section class="article2">
-                    <h3>Pronotions are now neatly organized</h3>
-                    <ul>
+                    <h3 class="bold">Pronotions are now neatly organized</h3>
+                    <hr class="line2">
+                    <ul class="bullet">
                         <li>Lorem ipsum dolor sit amet, modus nullam ad sit, delicata adversarium cum ei, iudico viderer quo ex. </li>
                         <li>Lorem ipsum dolor sit amet, modus nullam ad sit, delicata adversarium cum ei, iudico viderer quo ex. </li>
                         <li>Lorem ipsum dolor sit amet, modus nullam ad sit, delicata adversarium cum ei, iudico viderer quo ex. </li>
@@ -104,14 +112,17 @@
             </section>
         
             <section style="background-image:URL('resources/img/glassBackground.jpg')">
-                <aside>
-                    <h3><strong>Fusche dapibus tellus ac cursos</strong></h3>
+                <div class="container bgm">
+                <div class="ad">
+                <h3><strong>Fusche dapibus tellus ac cursos</strong></h3>
                     <p>Lorem ipsum dolor sit amet, modus nullam ad sit, delicata adversarium cum ei, iudico viderer quo ex. Harum accumsan
                         noluisse vix ei. Eripuit civibus ex has.</p>
-                    <hr><br>
+                    <hr class="line3" >
                     <h2>$99</h2>
-                    <button>ADD TO CART</button>
-                </aside>
+                    <button class="button">ADD TO CART</button>
+                </div>
+                    
+                </div>
             </section>
             
             <footer>
@@ -128,7 +139,7 @@
                             <label for="message">Message</label>
                             <textarea name="message" id="message" rows="3"></textarea>
         
-                            <input type="submit" value="Send">
+                            <input type="submit" value="Send" class="button">
                                     
                         </form>
                     </aside>
@@ -154,597 +165,6 @@
                 </section>
             </footer>
         </div>
-    </body>    <meta name="viewport" content="width=device-width, initial-scale=1">
-        <head>
-        <meta charset="utf-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Inbox from Google</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-    </head>
-
-    <body>
-        <div>
-            <header>
-
-                <img src="resources/img/logo.svg" alt="Logo.svg">
-                <a href="#">Sign in</a>
-                <button>GET INBOX</button>
-
-                <nav>
-                    <ul>
-                        <li><a href="#">inbox</a></li>
-                        <li><a href="#">bundles</a></li>
-                        <li><a href="#">highlite</a></li>
-                        <li><a href="#">Remainders</a></li>
-                        <li><a href="#">Snoozers</a></li>
-                        <li><a href="#">Getinbox</a></li>
-                    </ul>
-                </nav>
-
-            </header>  
-
-            <section>
-
-                <img src="resources/img/inboxLogo.svg" alt="logo.svg">
-                <h1>The Inbox thats works for you</h1>
-                <button>GET INBOX</button>
-
-            </section>
-
-            <section>
-
-                <aside>
-                    <h3>
-                        <strong>Nulla Vitae elit libero </strong>
-                    </h3>
-                    <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do 
-                            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim 
-                            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut 
-                            aliquip ex ea commodo consequat. Duis aute irure dolor in 
-                            reprehenderit in voluptate velit esse cillum dolore eu fugiat 
-                            nulla pariatur.
-                    </p>
-                    <a href="#">MORE</a>
-                </aside>
-
-                <aside>
-                    <img src="resources/img/manImg.jpg" alt="manImg.jpg">
-                </aside>
-
-            </section>
-
-            <section>
-
-                <aside>
-                    <img src="resources/img/glass.jpg" alt="glass.jpg">
-                    <h3>
-                        <strong>Tellus Sit </strong>
-                    </h3>
-                    <button>ADD TO CART</button>
-                </aside>
-
-                <aside>
-                    <img src="resources/img/shoes.jpg" alt="shoes.jpg">
-                    <h3>
-                        <strong>Elit Pharetra Justo </strong>
-                    </h3>
-                    <button>ADD TO CART</button>
-                </aside>
-
-                <aside>
-                    <img src="resources/img/bag.jpg" alt="bag.jpg">
-                    <h3>
-                        <strong>Purus Ultricies </strong>
-                    </h3>
-                    <button>ADD TO CART</button>
-                </aside>   
-
-            </section>
-
-            <section>
-                    <h3><strong>Fusche dapibus tellus ac cursos</strong></h3>
-                    <hr>
-                    <ul>
-                        <li>Lorem ipsum dolor sit amet, modus nullam ad sit, delicata adversarium cum ei, iudico viderer quo ex. </li>
-                        <li>Lorem ipsum dolor sit amet, modus nullam ad sit, delicata adversarium cum ei, iudico viderer quo ex. </li>
-                        <li>Lorem ipsum dolor sit amet, modus nullam ad sit, delicata adversarium cum ei, iudico viderer quo ex. </li>
-                        <li>Lorem ipsum dolor sit amet, modus nullam ad sit, delicata adversarium cum ei, iudico viderer quo ex. </li>
-                    </ul>
-            </section>
-        
-            <section style="background-image:URL('resources/img/glassBackground.jpg')">
-                <aside>
-                    <h3><strong>Fusche dapibus tellus ac cursos</strong></h3>
-                    <p>Lorem ipsum dolor sit amet, modus nullam ad sit, delicata adversarium cum ei, iudico viderer quo ex. Harum accumsan
-                        noluisse vix ei. Eripuit civibus ex has.</p>
-                    <hr><br>
-                    <h2>$99</h2>
-                    <button>ADD TO CART</button>
-                </aside>
-            </section>
-            
-            <footer>
-                <section>
-                    <aside>
-                    <form method="post" action="#">
-        
-                            <label for="name">Name</label>
-                            <input type="text" name="name" id="name">
-                            
-                            <label for="email">Email</label>
-                            <input type="text" name="email" id="email">
-
-                            <label for="message">Message</label>
-                            <textarea name="message" id="message" rows="3"></textarea>
-        
-                            <input type="submit" value="Send">
-                                    
-                        </form>
-                    </aside>
-        
-                    <aside>
-                        <div>
-                            <h3><strong>Elit Justo</strong></h3><br>
-                            <p>Dopibus ligula Parturient</p><br>
-                            <p>New York,NY12345</p><br>
-                            <p>USA</p><br>
-                            <h3><strong>EMAIL US</strong><h3><br>
-                        </div>
-
-                        <div>
-                            <h4><strong>Monday - Friday</strong></h4><br>
-                            <p></p>10 AM - 8 PM</p><br>
-                            <h4><strong>Saturday - Sunday</strong></h4><br>
-                            <p>10 AM - 6 PM</p><br>
-                        </div>
-        
-                    </aside>
-        
-                </section>
-            </footer>
-        </div>
-    </body></head>
-    <head>
-        <meta charset="utf-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Inbox from Google</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-    </head>
-
-    <body>
-        <div>
-            <header>
-
-                <img src="resources/img/logo.svg" alt="Logo.svg">
-                <a href="#">Sign in</a>
-                <button>GET INBOX</button>
-
-                <nav>
-                    <ul>
-                        <li><a href="#">inbox</a></li>
-                        <li><a href="#">bundles</a></li>
-                        <li><a href="#">highlite</a></li>
-                        <li><a href="#">Remainders</a></li>
-                        <li><a href="#">Snoozers</a></li>
-                        <li><a href="#">Getinbox</a></li>
-                    </ul>
-                </nav>
-
-            </header>  
-
-            <section>
-
-                <img src="resources/img/inboxLogo.svg" alt="logo.svg">
-                <h1>The Inbox thats works for you</h1>
-                <button>GET INBOX</button>
-
-            </section>
-
-            <section>
-
-                <aside>
-                    <h3>
-                        <strong>Nulla Vitae elit libero </strong>
-                    </h3>
-                    <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do 
-                            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim 
-                            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut 
-                            aliquip ex ea commodo consequat. Duis aute irure dolor in 
-                            reprehenderit in voluptate velit esse cillum dolore eu fugiat 
-                            nulla pariatur.
-                    </p>
-                    <a href="#">MORE</a>
-                </aside>
-
-                <aside>
-                    <img src="resources/img/manImg.jpg" alt="manImg.jpg">
-                </aside>
-
-            </section>
-
-            <section>
-
-                <aside>
-                    <img src="resources/img/glass.jpg" alt="glass.jpg">
-                    <h3>
-                        <strong>Tellus Sit </strong>
-                    </h3>
-                    <button>ADD TO CART</button>
-                </aside>
-
-                <aside>
-                    <img src="resources/img/shoes.jpg" alt="shoes.jpg">
-                    <h3>
-                        <strong>Elit Pharetra Justo </strong>
-                    </h3>
-                    <button>ADD TO CART</button>
-                </aside>
-
-                <aside>
-                    <img src="resources/img/bag.jpg" alt="bag.jpg">
-                    <h3>
-                        <strong>Purus Ultricies </strong>
-                    </h3>
-                    <button>ADD TO CART</button>
-                </aside>   
-
-            </section>
-
-            <section>
-                    <h3><strong>Fusche dapibus tellus ac cursos</strong></h3>
-                    <hr>
-                    <ul>
-                        <li>Lorem ipsum dolor sit amet, modus nullam ad sit, delicata adversarium cum ei, iudico viderer quo ex. </li>
-                        <li>Lorem ipsum dolor sit amet, modus nullam ad sit, delicata adversarium cum ei, iudico viderer quo ex. </li>
-                        <li>Lorem ipsum dolor sit amet, modus nullam ad sit, delicata adversarium cum ei, iudico viderer quo ex. </li>
-                        <li>Lorem ipsum dolor sit amet, modus nullam ad sit, delicata adversarium cum ei, iudico viderer quo ex. </li>
-                    </ul>
-            </section>
-        
-            <section style="background-image:URL('resources/img/glassBackground.jpg')">
-                <aside>
-                    <h3><strong>Fusche dapibus tellus ac cursos</strong></h3>
-                    <p>Lorem ipsum dolor sit amet, modus nullam ad sit, delicata adversarium cum ei, iudico viderer quo ex. Harum accumsan
-                        noluisse vix ei. Eripuit civibus ex has.</p>
-                    <hr><br>
-                    <h2>$99</h2>
-                    <button>ADD TO CART</button>
-                </aside>
-            </section>
-            
-            <footer>
-                <section>
-                    <aside>
-                    <form method="post" action="#">
-        
-                            <label for="name">Name</label>
-                            <input type="text" name="name" id="name">
-                            
-                            <label for="email">Email</label>
-                            <input type="text" name="email" id="email">
-
-                            <label for="message">Message</label>
-                            <textarea name="message" id="message" rows="3"></textarea>
-        
-                            <input type="submit" value="Send">
-                                    
-                        </form>
-                    </aside>
-        
-                    <aside>
-                        <div>
-                            <h3><strong>Elit Justo</strong></h3><br>
-                            <p>Dopibus ligula Parturient</p><br>
-                            <p>New York,NY12345</p><br>
-                            <p>USA</p><br>
-                            <h3><strong>EMAIL US</strong><h3><br>
-                        </div>
-
-                        <div>
-                            <h4><strong>Monday - Friday</strong></h4><br>
-                            <p></p>10 AM - 8 PM</p><br>
-                            <h4><strong>Saturday - Sunday</strong></h4><br>
-                            <p>10 AM - 6 PM</p><br>
-                        </div>
-        
-                    </aside>
-        
-                </section>
-            </footer>
-        </div>
-    </body>
-        <head>
-        <meta charset="utf-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Inbox from Google</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-    </head>
-
-    <body>
-        <div>
-            <header>
-
-                <img src="resources/img/logo.svg" alt="Logo.svg">
-                <a href="#">Sign in</a>
-                <button>GET INBOX</button>
-
-                <nav>
-                    <ul>
-                        <li><a href="#">inbox</a></li>
-                        <li><a href="#">bundles</a></li>
-                        <li><a href="#">highlite</a></li>
-                        <li><a href="#">Remainders</a></li>
-                        <li><a href="#">Snoozers</a></li>
-                        <li><a href="#">Getinbox</a></li>
-                    </ul>
-                </nav>
-
-            </header>  
-
-            <section>
-
-                <img src="resources/img/inboxLogo.svg" alt="logo.svg">
-                <h1>The Inbox thats works for you</h1>
-                <button>GET INBOX</button>
-
-            </section>
-
-            <section>
-
-                <aside>
-                    <h3>
-                        <strong>Nulla Vitae elit libero </strong>
-                    </h3>
-                    <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do 
-                            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim 
-                            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut 
-                            aliquip ex ea commodo consequat. Duis aute irure dolor in 
-                            reprehenderit in voluptate velit esse cillum dolore eu fugiat 
-                            nulla pariatur.
-                    </p>
-                    <a href="#">MORE</a>
-                </aside>
-
-                <aside>
-                    <img src="resources/img/manImg.jpg" alt="manImg.jpg">
-                </aside>
-
-            </section>
-
-            <section>
-
-                <aside>
-                    <img src="resources/img/glass.jpg" alt="glass.jpg">
-                    <h3>
-                        <strong>Tellus Sit </strong>
-                    </h3>
-                    <button>ADD TO CART</button>
-                </aside>
-
-                <aside>
-                    <img src="resources/img/shoes.jpg" alt="shoes.jpg">
-                    <h3>
-                        <strong>Elit Pharetra Justo </strong>
-                    </h3>
-                    <button>ADD TO CART</button>
-                </aside>
-
-                <aside>
-                    <img src="resources/img/bag.jpg" alt="bag.jpg">
-                    <h3>
-                        <strong>Purus Ultricies </strong>
-                    </h3>
-                    <button>ADD TO CART</button>
-                </aside>   
-
-            </section>
-
-            <section>
-                    <h3><strong>Fusche dapibus tellus ac cursos</strong></h3>
-                    <hr>
-                    <ul>
-                        <li>Lorem ipsum dolor sit amet, modus nullam ad sit, delicata adversarium cum ei, iudico viderer quo ex. </li>
-                        <li>Lorem ipsum dolor sit amet, modus nullam ad sit, delicata adversarium cum ei, iudico viderer quo ex. </li>
-                        <li>Lorem ipsum dolor sit amet, modus nullam ad sit, delicata adversarium cum ei, iudico viderer quo ex. </li>
-                        <li>Lorem ipsum dolor sit amet, modus nullam ad sit, delicata adversarium cum ei, iudico viderer quo ex. </li>
-                    </ul>
-            </section>
-        
-            <section style="background-image:URL('resources/img/glassBackground.jpg')">
-                <aside>
-                    <h3><strong>Fusche dapibus tellus ac cursos</strong></h3>
-                    <p>Lorem ipsum dolor sit amet, modus nullam ad sit, delicata adversarium cum ei, iudico viderer quo ex. Harum accumsan
-                        noluisse vix ei. Eripuit civibus ex has.</p>
-                    <hr><br>
-                    <h2>$99</h2>
-                    <button>ADD TO CART</button>
-                </aside>
-            </section>
-            
-            <footer>
-                <section>
-                    <aside>
-                    <form method="post" action="#">
-        
-                            <label for="name">Name</label>
-                            <input type="text" name="name" id="name">
-                            
-                            <label for="email">Email</label>
-                            <input type="text" name="email" id="email">
-
-                            <label for="message">Message</label>
-                            <textarea name="message" id="message" rows="3"></textarea>
-        
-                            <input type="submit" value="Send">
-                                    
-                        </form>
-                    </aside>
-        
-                    <aside>
-                        <div>
-                            <h3><strong>Elit Justo</strong></h3><br>
-                            <p>Dopibus ligula Parturient</p><br>
-                            <p>New York,NY12345</p><br>
-                            <p>USA</p><br>
-                            <h3><strong>EMAIL US</strong><h3><br>
-                        </div>
-
-                        <div>
-                            <h4><strong>Monday - Friday</strong></h4><br>
-                            <p></p>10 AM - 8 PM</p><br>
-                            <h4><strong>Saturday - Sunday</strong></h4><br>
-                            <p>10 AM - 6 PM</p><br>
-                        </div>
-        
-                    </aside>
-        
-                </section>
-            </footer>
-        </div>
-    </body><body>
-        <div>
-            <header>
-
-                <img src="resources/img/logo.svg" alt="Logo.svg">
-                <a href="#">Sign in</a>
-                <button>GET INBOX</button>
-
-                <nav>
-                    <ul>
-                        <li><a href="#">inbox</a></li>
-                        <li><a href="#">bundles</a></li>
-                        <li><a href="#">highlite</a></li>
-                        <li><a href="#">Remainders</a></li>
-                        <li><a href="#">Snoozers</a></li>
-                        <li><a href="#">Getinbox</a></li>
-                    </ul>
-                </nav>
-
-            </header>  
-
-            <section>
-
-                <img src="resources/img/inboxLogo.svg" alt="logo.svg">
-                <h1>The Inbox thats works for you</h1>
-                <button>GET INBOX</button>
-
-            </section>
-
-            <section>
-
-                <aside>
-                    <h3>
-                        <strong>Nulla Vitae elit libero </strong>
-                    </h3>
-                    <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do 
-                            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim 
-                            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut 
-                            aliquip ex ea commodo consequat. Duis aute irure dolor in 
-                            reprehenderit in voluptate velit esse cillum dolore eu fugiat 
-                            nulla pariatur.
-                    </p>
-                    <a href="#">MORE</a>
-                </aside>
-
-                <aside>
-                    <img src="resources/img/manImg.jpg" alt="manImg.jpg">
-                </aside>
-
-            </section>
-
-            <section>
-
-                <aside>
-                    <img src="resources/img/glass.jpg" alt="glass.jpg">
-                    <h3>
-                        <strong>Tellus Sit </strong>
-                    </h3>
-                    <button>ADD TO CART</button>
-                </aside>
-
-                <aside>
-                    <img src="resources/img/shoes.jpg" alt="shoes.jpg">
-                    <h3>
-                        <strong>Elit Pharetra Justo </strong>
-                    </h3>
-                    <button>ADD TO CART</button>
-                </aside>
-
-                <aside>
-                    <img src="resources/img/bag.jpg" alt="bag.jpg">
-                    <h3>
-                        <strong>Purus Ultricies </strong>
-                    </h3>
-                    <button>ADD TO CART</button>
-                </aside>   
-
-            </section>
-
-            <section>
-                    <h3><strong>Fusche dapibus tellus ac cursos</strong></h3>
-                    <hr>
-                    <ul>
-                        <li>Lorem ipsum dolor sit amet, modus nullam ad sit, delicata adversarium cum ei, iudico viderer quo ex. </li>
-                        <li>Lorem ipsum dolor sit amet, modus nullam ad sit, delicata adversarium cum ei, iudico viderer quo ex. </li>
-                        <li>Lorem ipsum dolor sit amet, modus nullam ad sit, delicata adversarium cum ei, iudico viderer quo ex. </li>
-                        <li>Lorem ipsum dolor sit amet, modus nullam ad sit, delicata adversarium cum ei, iudico viderer quo ex. </li>
-                    </ul>
-            </section>
-        
-            <section style="background-image:URL('resources/img/glassBackground.jpg')">
-                <aside>
-                    <h3><strong>Fusche dapibus tellus ac cursos</strong></h3>
-                    <p>Lorem ipsum dolor sit amet, modus nullam ad sit, delicata adversarium cum ei, iudico viderer quo ex. Harum accumsan
-                        noluisse vix ei. Eripuit civibus ex has.</p>
-                    <hr><br>
-                    <h2>$99</h2>
-                    <button>ADD TO CART</button>
-                </aside>
-            </section>
-            
-            <footer>
-                <section>
-                    <aside>
-                    <form method="post" action="#">
-        
-                            <label for="name">Name</label>
-                            <input type="text" name="name" id="name">
-                            
-                            <label for="email">Email</label>
-                            <input type="text" name="email" id="email">
-
-                            <label for="message">Message</label>
-                            <textarea name="message" id="message" rows="3"></textarea>
-        
-                            <input type="submit" value="Send">
-                                    
-                        </form>
-                    </aside>
-        
-                    <aside>
-                        <div>
-                            <h3><strong>Elit Justo</strong></h3><br>
-                            <p>Dopibus ligula Parturient</p><br>
-                            <p>New York,NY12345</p><br>
-                            <p>USA</p><br>
-                            <h3><strong>EMAIL US</strong><h3><br>
-                        </div>
-
-                        <div>
-                            <h4><strong>Monday - Friday</strong></h4><br>
-                            <p></p>10 AM - 8 PM</p><br>
-                            <h4><strong>Saturday - Sunday</strong></h4><br>
-                            <p>10 AM - 6 PM</p><br>
-                        </div>
-        
-                    </aside>
-        
-                </section>
-            </footer>
-        </div>
+    </body>    
     </body>
 </html>
